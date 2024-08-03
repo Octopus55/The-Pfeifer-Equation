@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pfeifer Equation | Estimates</title>
+    <link rel="icon" type="image/x-icon" href="../images/Fav Sc.png">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <a href="../../index.html" class="b-link"><div id = "bar">
+        <h1 id="Main">The Pfeifer Equation</h1>
+        <div id = "logo">
+            <div class="circle outer" id="or-s"><div class="circle inner"></div></div>
+            <div class="circle outer red" id="re-s"><div class="circle inner red"></div></div>
+            <div class="circle outer purple" id="pu-s"><div class="circle inner purple"></div></div>
+        </div>
+        </div></a>
+    <h2 class="supp-head">Estimates</h2>
+
+    <p>Note: Pfeifer makes use of <strong>confidence intervals</strong> to justify some of his factor estimates. 
+        Some factors are lacking an adequate sample size. 
+        Thus, some conditions for confidence intervals cannot be satisfied due to a lack of data. 
+        This diminishes the robustness of a confidence interval, but with limited data, it will just have to be accepted that estimates for data-poor factors are susceptible to errors.</p>
+    <p>If you would like to learn more about confidence intervals, you can view the section titled <a href="#WIACI" class="i-link"><strong>“What is a Confidence Interval?”</strong></a> at the bottom of this page. 
+        There are also many helpful resources on the internet such as <a href="https://www.khanacademy.org/math/statistics-probability/confidence-intervals-one-sample" target="_blank" class="i-link"><strong>Khan Academy</strong></a>. 
+        Knowledge of confidence intervals is not required but would increase your understanding of how Pfeifer came to his estimates.</p>
+
+    <h3>Terrestrial or Super Earth</h3>
+    <p class="orange">When looking at exoplanets, this factor seeks to identify how common rocky planets are. 
+        Rocky planets are important for life, since they could potentially provide water at the surface to be used as a solvent. 
+        <a href="https://science.nasa.gov/exoplanets/exoplanet-catalog/" target="_blank" class="i-link"><strong>NASA's Exoplanet Catalog</strong></a> presents information on all 5678 confirmed exoplanets (as of July 2024). 
+        Exoplanets are categorized into 1 of 4 main types: Terrestrial, Super Earth, Neptune-Like, and Gas Giant. 
+        Of these 4 types, Terrestrial and Super Earth planets are considered rocky. 
+        Out of the 5678 known exoplanets, 203 are Terrestrial (3.5752%) and 1711 are Super Earths (30.13385%). 
+        Combining the two exoplanet types gives us 1914 rocky exoplanets, which results in an observed frequency of 0.3371. 
+        This is the value that Pfeifer chose to represent this factor's estimate.</p>
+    <div class="centered"><div class="circle outer"><div class="circle inner">
+        P(Terrestrial or Super Earth)
+        <br>
+        =
+        <br>
+        0.3371
+    </div></div></div>
+
+    <h3>Habitable Zone</h3>
+    <p class="orange">The habitable zone describes the region where a planet can have <strong>liquid water</strong> at the surface. 
+        If a planet lies outside of this region, that means that the distance between it and its star does not allow for temperatures that permit water to be in a liquid state. 
+        How common is it that planets fall within their star's habitable zone? 
+        Using <a href="https://eyes.nasa.gov/apps/exo/#/" target="_blank" class="i-link"><strong>NASA's Eyes on Exoplanets</strong></a>, you can visualize any star system. 
+        They have included a habitable zone overlay so that you can see if a planet's orbit lies within the habitable zone of its star. 
+        Out of the 203 Terrestrial exoplanets, only 1 is within its star's habitable zone. 
+        That exoplanet is called <strong>TRAPPIST-1 e</strong>. 
+        Two of the 203 orbit stars of an unknown type for which the habitable zone cannot yet be determined. 
+        Nevertheless, only 1 of 201 Terrestrial exoplanets with a known star type is in its star's habitable zone. 
+        A 95% confidence interval for this proportion returns an interval of (-0.0048, 0.0147). 
+        A random sample looking at Super Earth exoplanets in relation to the habitable zone does not show a significant difference from the upper bound of 0.0147. 
+        Therefore, Pfeifer chose this value for his estimate of the probability that a planet is in the habitable zone.</p>
+    <div class="centered"><div class="circle outer"><div class="circle inner">
+        P(In Habitable Zone)
+        <br>
+        =
+        <br>
+        0.0147
+    </div></div></div>
+    <p class="orange">The vast majority of exoplanets are detected using the <strong>transit method</strong>. 
+        This means that they are found by astronomers observing a decrease in the brightness of a star due to the exoplanet passing in front of it from our viewing perspective. 
+        Compared to other methods, the transit method has been exceptional at detecting new exoplanets. 
+        However, one drawback is that the planets it is able to find are disproportionately close to their star. 
+        Many exoplanets found using the transit method are less than 0.1 AU away from their stars. 
+        AU stands for <strong>astronomical units</strong>, where 1 AU is the distance between Earth and the Sun. 
+        For reference, Mercury is roughly 0.4 AU away from the Sun. 
+        This means that many of the exoplanets found using the transit method are too close relative to their respective habitable zones. 
+        To account for this potential skewness in the data, Pfeifer used the upper bound of the 95% confidence interval as his estimate rather than the observed frequency.</p>
+
+    <h3>Magnetic Field</h3>
+    <p class="orange">A magnetic field is important for a planet's habitability. 
+        It shields against <strong>solar winds</strong> and protects the atmosphere. 
+        Unfortunately, we are not able to detect magnetic fields of exoplanets orbiting stars that are light years away. 
+        When looking just at our solar system, 6 of the 8 planets have magnetic fields. 
+        The two planets which do not generate a magnetic field are Venus and Mars. 
+        This is not a very large sample size. 
+        To get a better idea of how common magnetic fields are among bodies in space, we can observe moons. 
+        We currently know of 288 moons orbiting the 8 planets in our solar system. 
+        Only one of the 288 moons is known to have a magnetic field: Jupiter's moon <strong>Ganymede</strong>. 
+        This suggests that bodies in space may not have magnetic fields as frequently as is observed in the planets of our solar system. 
+        At the same time, many moons are less massive than planets and do not share some characteristics at the same rate. 
+        In the grand scheme, it is difficult to come up with a precise and accurate estimate for the probability of a planet having a magnetic field due to data constraints. 
+        Pfeifer chose to estimate the probability of a magnetic field at 0.7, a little lower than the 0.75 observed among the planets in our solar system. 
+        This value also lies within the fairly wide 95% confidence interval.</p>
+        <div class="centered"><div class="circle outer"><div class="circle inner">
+            P(Magnetic Field)
+            <br>
+            =
+            <br>
+            0.7
+        </div></div></div>
+
+    <h3>Life-Supporting Atmosphere</h3>
+    <p class="orange">Having a life-supporting atmosphere is a key factor that affects the temperature of the planet as well as providing appropriate weather and protection against <strong>ultraviolet radiation</strong>. 
+        It also allows life to breathe. 
+        Similarly to other factors, there is no data readily available on the atmospheres of exoplanets. 
+        While this is understandable, it leaves little on which to base an estimate for this factor. 
+        We know that Earth is the only planet in our solar system with a life-supporting atmosphere. 
+        This gives us 1/8. 
+        Pfeifer reasoned that the probability for this factor was likely lower than 1/8, because Earth's atmosphere has some rare qualities that are crucial to life and are hard to replicate. 
+        He conservatively estimated the probability of a life-supporting atmosphere to be 0.1.</p>
+        <div class="centered"><div class="circle outer"><div class="circle inner">
+            P(Life Supporting Atmosphere)
+            <br>
+            =
+            <br>
+            0.1
+        </div></div></div>
+
+    <h3>Contains Essential Chemicals</h3>
+    <p class="orange">Carbon, hydrogen, nitrogen, oxygen, phosphorus, and sulfur (<strong>CHNOPS</strong>) are considered to be the elements needed for life. 
+        At the moment, there is no way of scanning for the presence of these elements on exoplanets. 
+        An alternative that astronomers use involves studying the composition of stars. 
+        Since planets are made of the same dust as their stars, they generally have similar <strong>relative abundances</strong> of elements. 
+        To this point, observations made using <strong>spectroscopy</strong> have revealed that the CHNOPS elements are not present in every star. 
+        Most notably, <strong>phosphorus</strong> is much less abundant than the others. 
+        The <a href="https://www.hypatiacatalog.com/" target="_blank" class="i-link"><strong>Hypatia Catalog</strong></a> provides data on what proportion of stars are found to have specific elements. 
+        Out of 9434 stars contained in the database, only 100 were found to have phosphorus. 
+        That is just a little over 1%. With this sample proportion, Pfeifer constructed a 95% confidence interval of (0.00853, 0.012667). 
+        Based on the Hypatia Catalog sample, phosphorus does not seem to be common among stars. 
+        This is in contrast with hydrogen, which appears in every star. 
+        As for carbon, nitrogen, oxygen, and sulfur, they are observed at rates considerably higher than phosphorus. 
+        Because of this, Pfeifer reasoned that the abundance of phosphorus could be seen as the <strong>upper limit</strong> for the proportion of stars/planets that satisfy the requirement for the 6 essential elements. 
+        He decided on a value of 0.01 as the probability that a planet contains the necessary essential chemicals.</p>
+    <div class="centered"><div class="circle outer"><div class="circle inner">
+        P(Contains Essential Chemicals)
+        <br>
+        =
+        <br>
+        0.01
+    </div></div></div>
+
+    <h3 class="red">Life Forms</h3>
+    <p class="red">Although we have yet to find any traces of life, many people eagerly anticipate that it is only a matter of time until we find something. 
+        This outlook suggests that life is, to a certain degree, common throughout the universe. 
+        Where does this feeling come from? 
+        The process of turning <strong>non-living matter</strong> into life is one that we do not understand. 
+        How likely is it that a perfectly habitable planet with all the right tools undergoes this process? 
+        If it were of high likelihood, why hasn't it occurred more than once on Earth? 
+        All life that we have uncovered is derived from the same <strong>common ancestor</strong>. 
+        There is no evidence that another strain has ever existed. 
+        It is possible that the formation of life as we know it on Earth was an extremely rare feat. 
+        Perhaps, as Pfeifer dubs it, <strong>rarer than the size of the universe</strong>. 
+        This means that the formation of life on a habitable planet could be so rare that it is conceivable that we are <strong>alone</strong> in the universe despite its tremendous size. 
+        This does not mean that it is impossible for life to occur more than once, just that one would only expect one occurrence per universe. 
+        With this interpretation, we would be extremely lucky to find extraterrestrial life given the small sample size of other worlds that we are able to observe relative to the size of the universe. 
+        Pfeifer's estimate could be completely wrong, but with the current information, no estimate is more justifiable than others.</p>
+    <div class="centered"><div class="circle outer red"><div class="circle inner red">
+        P(Life Forms)
+        <br>
+        =
+        <br>
+        1/universe
+    </div></div></div>
+
+    <h3 class="purple">Number of Stars in the Galaxy</h3>
+    <p class="purple">Having an estimate for the number of stars in the galaxy can be helpful for estimating how many planets are in the galaxy, given that we also have an estimate for the number of planets per star. 
+        Using various methods, astronomers have estimated that there are in the neighborhood of <strong>100 to 400 billion</strong> stars in the Milky Way galaxy. 
+        These methods require some estimates of their own. 
+        In other words, we have to estimate in order to estimate. 
+        100 to 400 billion may seem like a wide range with a lot of uncertainty, but at the very least, it is in the same <strong>order of magnitude</strong>. 
+        There is not much to estimating this factor other than simply picking a number within that range. 
+        Pfeifer chose an estimate of 200 billion stars in the Milky Way galaxy.</p>
+    <div class="centered"><div class="circle outer purple"><div class="circle inner purple">
+        Number of Stars 
+        <br>
+        in the Galaxy
+        <br>
+        =
+        <br>
+        200,000,000,000
+    </div></div></div>
+
+    <h3 class="purple">Planets Per Star</h3>
+    <p class="purple">Since we have an estimate for the number of stars in the galaxy, we can multiply this number by the number of planets per star... which we also have to estimate. 
+        A good place to start might be finding the observed average. 
+        This can be done by taking the number of exoplanets and dividing by the number of <strong>unique</strong> host stars (since some stars might have multiple exoplanets, we do not want to count them twice). 
+        <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank" class="i-link"><strong>NASA's Exoplanet Archive</strong></a> provides data on all 5678 exoplanets (as of July 2024). 
+        Using this data, it can be derived that there are 4236 solar systems other than our own. 
+        That means that, on average, other solar systems have roughly 1.34 exoplanets per host star. 
+        However, there is another solar system that we know of. 
+        If we include our own solar system, there are 5686 known planets orbiting 4237 stars. 
+        This gives us an average of 1.342 planets per known solar system. 
+        The 95% confidence interval for this mean is (1.3188, 1.3652), (with standard deviation = 0.7691754). 
+        The upper bound of 1.3652 is the value Pfeifer chose for the estimate of this factor. 
+        In some ways, this estimate could be potentially <strong>flawed</strong>. 
+        Firstly, it does not include stars that have zero planets. 
+        Since we know of many stars that do not have any known planets, the average would be much closer to 0. 
+        However, there are obviously planets out there which we have not yet discovered. 
+        This means that host stars with exoplanets could have more than just the ones we have found. 
+        Likewise, for stars without any observed planets, there could be planets orbiting around them for all we know. 
+        The <strong>transit method</strong> has been the most successful method for finding exoplanets, but most of the exoplanets identified have very small orbital radii. 
+        There could be many more exoplanets orbiting these host stars at further distances, but until we find them we just do not know. 
+        Out of the other 4236 stars, only 1 matches the 8 planet mark set by our sun. 
+        That star is named <strong>KOI-351</strong> (also referred to as <strong>Kepler-90</strong>). 
+        Another notable host star, <strong>TRAPPIST-1</strong> is the only one with exactly 7 known exoplanets. 
+        Even in our own solar system, which we can most easily study, there is an ongoing theory/debate about the presence of a ninth planet dubbed <strong>"Planet 9."</strong> 
+        As we collect more data and discover more planets, we may be able to make a more accurate (less flawed) estimate for this factor. 
+        However, until evidence is provided, Pfeifer's estimate of 1.3652 is a solid estimate, based on what we have observed.</p>
+    <div class="centered"><div class="circle outer purple"><div class="circle inner purple">
+        Planets Per Star
+        <br>
+        =
+        <br>
+        1.3652
+    </div></div></div>
+
+    <h3 class="white" id="WIACI">What is a Confidence Interval?</h3>
+    <p>Confidence Intervals are a statistical tool for <strong>estimating population means</strong> and <strong>proportions</strong>. 
+        It is not often that we have the data for the entire population. 
+        If you wanted to know the average amount of sleep across all humans, for instance, you probably would not be able to ask every single person how much they sleep. 
+        The next best thing you can do is obtain a <strong>sample</strong>. 
+        A sample involves conducting a survey and collecting data from a small but representative part of the population you are studying. 
+        Once you have collected your sample, you will hopefully have some useful parameters such as a <strong>sample proportion</strong> (expressed as a fraction or a percentage) or a <strong>sample mean</strong> and <strong>sample standard deviation</strong>. 
+        Due to <strong>sampling error</strong>, it is unlikely that your sample mean or proportion is exactly the same as that of the entire population, but it might be in the same ballpark. 
+        A confidence interval allows us to account for the <strong>uncertainty</strong> that comes with our sample and assess what values the true population parameter could take on.</p>
+    <p>The Confidence Interval formula for proportions is shown below:</p>
+    <p class="formula">100(1 - &#945)% Confidence Interval = p&#770 ± Z &#x2022 &#8730(p&#770(1 - p&#770) / n)</p>
+    <ul>Where
+        <li>&#945 = significance level</li>
+        <li>p&#770 = sample proportion</li>
+        <li>Z = critical Z value for a given &#945 (can be found using a Z-table)</li>
+        <li>n = sample size</li>
+    </ul>
+    <p>The Confidence Interval formula for means is shown below:</p>
+    <p class="formula">100(1 - &#945)% Confidence Interval = x&#772 ± t &#x2022 s / &#8730n</p>
+    <ul>Where
+        <li>&#945 = significance level</li>
+        <li>x&#772 = sample mean</li>
+        <li>t = critical t value for a given &#945 and df (can be found using a t-table)</li>
+        <li>df = degrees of freedom = n - 1</li>
+        <li>s = sample standard deviation</li>
+        <li>n = sample size</li>
+    </ul>
+    <p>When constructing a confidence interval for <strong>means</strong>, we could use a critical Z value or a critical t value. 
+        Z is used when the population standard deviation (&#963) is <strong>known</strong>. 
+        Most of the time the population standard deviation is <strong>unknown</strong>, so t is often preferred over Z when estimating means. 
+        To obtain a critical t value we not only need a significance level (&#945), but also the degrees of freedom. 
+        The degrees of freedom is simply equal to n - 1. 
+        If you look at a t-table, you will notice that as the degrees of freedom increase (as n increases), the t values approach the Z values for the same level of significance. 
+        This makes sense since as the sample size increases, we expect there to be less sampling error. 
+        In essence, when using t, a bigger sample size will result in a narrower interval.</p>
+
+    <h4>Significance Level</h4>
+    <p>One important thing to note is the significance level. 
+        The significance level (&#945) represents the level of uncertainty. 
+        It is chosen before any calculations are performed to prevent <strong>biases</strong>. 
+        It essentially states what percent of the time we are ok with being wrong. 
+        It is related to confidence level in that the confidence level = 1 - &#945. 
+        In statistics, it is customary to select a significance level of 0.05, in turn giving us a confidence level of 95%. 
+        The significance level affects how <strong>wide</strong> our confidence interval is. 
+        If we decrease our significance level (&#945), the confidence level is higher and the interval has a wider range of values. 
+        A wider range entails that our estimate is less precise. 
+        If we have a higher significance level (&#945), the confidence level is lower but the interval has a narrower range of values. 
+        A narrower range makes our estimate more precise but also more likely to not contain the population parameter. 
+        It is a balance between risk and precision. 
+        A 100% confidence interval would go on forever in both the positive and negative directions, which would not tell us much about our population parameter. 
+        A 50% confidence interval would be very precise; however, we would not be very confident that the population parameter is within the interval. 
+        This is why most of the time significance levels are set to 0.1, 0.05, or 0.01.</p>
+    
+    <p class="formula">95% CI for proportions = p&#770 ± 1.96 &#x2022 &#8730(p&#770(1 - p&#770) / n)</p>
+    <p class="formula">95% CI for means = x&#772 ± t &#x2022 s / &#8730n</p>
+    <p class="caption">In the 95% CI for means, the critical t value will be between 1.96 and 12.71 depending on n</p>
+
+    <h4>Interpreting the Interval</h4>
+    <p>Once we have constructed our confidence interval, what does it tell us? 
+        When we construct a confidence interval, we end up with an upper and lower bound, hence the ±. 
+        Our chosen confidence level ascertains how confident we are that the population mean or proportion is within the interval. 
+        If our confidence level is 95%, we are 95% <strong>confident</strong> that the population parameter is contained between the upper and lower bounds. 
+        This is <strong>NOT</strong> the same as saying there is a 95% chance that the population parameter is contained in the interval. 
+        We do not know the true value of the population parameter, and we do not know how likely it is that it is contained in our interval. 
+        Rather, our confidence level is a measure of what percentage of confidence intervals will contain the true population parameter in the long run. 
+        If we conducted many samples from the sample population and constructed many confidence intervals, the confidence level is what percent of those intervals we expect to contain the true population parameter. 
+        Values within a confidence interval are reasonable estimates for the parameter.</p>
+
+    <p>When constructing confidence intervals, there are certain conditions that help confirm the validity of the interval such as having a random sample and satisfying the normal condition. 
+        For some of the factors in the Pfeifer Equation, there is not sufficient data to satisfy these conditions. 
+        Collecting more data on exoplanets and their characteristics is definitely not easy, so we cannot just gather more at our own convenience. 
+        This diminishes the robustness of a confidence interval, but with limited data we just have to accept that our estimates are susceptible to errors.</p>
+
+    
+    <div class="buttons">
+        <a href="./Drake Equation.html" class="button"><div id = "TDE">The Drake Equation</div></a>
+        <a href="./The Math.html" class="button">The Math</a>
+        <a href="./Factors.html" class="button">Factors</a>
+        <a href="./Estimates.html" class="button">Estimates</a>
+        <a href="./Find Aliens.html" class="button" id="HL">How Long Until We Find Aliens</a>
+        <a href="./What About Moons.html" class="button" id="WAM">What About Moons</a>
+        <a href="./Make Your Own.html" class="button" id="MYO">Make Your Own</a>
+        <br>
+        <a href="../../index.html" class="button">Home</a>
+    </div>
+    
+    <p class="foot">Made by Nicholas Pfeifer</p>
+</body>
+</html>

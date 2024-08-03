@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pfeifer Equation | The Math</title>
+    <link rel="icon" type="image/x-icon" href="../images/Fav Sc.png">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <a href="../../index.html" class="b-link"><div id = "bar">
+        <h1 id="Main">The Pfeifer Equation</h1>
+        <div id = "logo">
+            <div class="circle outer" id="or-s"><div class="circle inner"></div></div>
+            <div class="circle outer red" id="re-s"><div class="circle inner red"></div></div>
+            <div class="circle outer purple" id="pu-s"><div class="circle inner purple"></div></div>
+        </div>
+        </div></a>
+    <h2 class="supp-head">The Math</h2>
+    <h3>Multiplying Independent Events</h3>
+    <h4 class="orange">What are independent events?</h4>
+    <p class="orange">Two events are considered independent if the outcome of one event does not impact the outcome of the other.</p>
+    <p class="orange">For example: If you were to flip a coin two times, the chances of landing on heads or tails does not change from flip to flip. 
+        In other words, the outcome of the first flip does not affect the outcome of the second flip. 
+        Therefore, the first flip and the second flip are considered independent events.</p>
+    
+    <h4>What about dependent events?</h4>
+    <p>Two events are considered dependent if the outcome of one event affects the probability of the other event occurring.</p>
+    <p>For example: If you were to draw 2 cards from a deck of 52 cards (without replacement), the chances of drawing hearts changes from the first draw to the second. 
+        Since there are 13 cards for each suit, getting a heart on the first card has a probability of 13/52 or 1/4. 
+        Now for the second card, there are only 51 cards left in the deck. 
+        If we drew a heart the first time around, our chances of getting another heart would be 12/51. 
+        If we drew something else on the first card, our chances of getting a heart on the second would be 13/51. 
+        We see that neither of these probabilities are equivalent to the probability of drawing a heart on the first card of 13/52. 
+        That means that the outcome of the first event affects the probability of the second, and thus the two events are dependent.</p>
+    
+    <h4 class="orange">How does this relate to planets?</h4>
+    <p class="orange">Unlike flipping coins and drawing cards, when it comes to planets we cannot easily predict the probability that they will have certain attributes that we assign. 
+        This is because we cannot possibly observe the entire <strong>population</strong> of planets in the galaxy or the universe due to technological constraints. 
+        It is possible that certain attributes relating to planets are dependent. 
+        For example, gas giants might be more likely to have magnetic fields than super earths. 
+        Unfortunately, with our <strong>small sample size</strong> relative to the galaxy/universe we do not have a definitive way of knowing.</p>
+    <p class="orange">For the purposes of the Pfeifer Equation, we are under the <strong>assumption</strong> that the orange factors are independent of each other.</p>
+    
+    <h4 class="orange">The Multiplication Rule</h4>
+    <p class="orange">Once we have the probabilities of each independent event (factor), we can use the multiplication rule to find the probability that all of the events are occurring at once.</p>
+    <p class="orange">The multiplication rule states: If events A and B are <strong>independent</strong> and their probabilities are denoted by P(A) and P(B) respectively, then</p>
+    <p class="orange formula">P(A and B) = P(A) x P(B)</p>
+    <p class="orange">This means that the probability that all factors are present for an individual planet is equal to the product of independent probabilities.</p>
+    <p class="orange">For the Pfeifer Equation, we can apply the multiplication rule to the orange factors to determine the probability that a planet is habitable.</p>
+
+
+    <h3 class="red">Conditional Probability</h3>
+    <h4 class="red">What is Conditional Probability?</h4>
+    <p class="red">When dealing with multiple events, it is possible that we gain information about the probability of one event occurring if we know the outcome of the other. 
+        Conditional probability is asking the question: what is the probability of event A given the outcome of event B? 
+        It is often written as P(A|B) which is the same as saying P(A given B). 
+        In general</p>
+    <p class="red formula">P(A|B) = P(A and B) / P(B)</p>
+    <p class="red">For example: Let's say you were to draw a card from a deck of 52 cards. 
+        Event A is the probability of drawing hearts, and event B is the probability of drawing a red card. 
+        We know that in a deck of 52 cards, there are 26 red cards and 13 of them are hearts. 
+        That means that the probability of drawing hearts is 13/52 or 1/4 and the probability of drawing a red card is 26/52 or 1/2. 
+        In other words P(A) = 1/4 and P(B) = 1/2. 
+        However, if we know that the card you are drawing is red, does that information change the chance of drawing a heart? 
+        Yes. 
+        If your card is red, it has to be either a heart or a diamond. 
+        There are 13 hearts and 13 diamonds in the deck, so now the probability of your card being a heart is 13/26 or 1/2. 
+        If we compare this to the formula from above, we also get 1/2. 
+        13 cards are both hearts and red so P(A and B) = 13/52 or 1/4, and we know that P(B) = 1/2. 
+        After dividing the two fractions we get 1/4 ÷ 1/2 = 2/4 = 1/2. 
+        The probability of drawing hearts given that the card is red, denoted as P(A|B), is equal to 1/2. 
+        Since we gained information from knowing that the card was red, the probability of drawing a heart is no longer 1/4. 
+        In this case, we see that P(A) ≠ P(A|B). 
+        This means that events A and B are <strong>dependent</strong>. 
+        This makes sense using our definition of dependent events from earlier, since the occurrence of event B affects the probability of event A.</p>
+    <p class="red">You may notice that if A and B are independent, then P(A) = P(A|B).</p>
+    <p class="red">Once we know that A and B are dependent, we can no longer use the multiplication rule from earlier. Now</p>
+    <p class="red formula">P(A and B) = P(A|B) x P(B)</p>
+    <p class="caption red">which is not equal to P(A) x P(B)</p>
+    <h4 class="red">How does this relate to planets?</h4>
+    <p class="red">In the Pfeifer Equation, the probability that life forms on a habitable world is dependent. 
+        If a world is not habitable, we are presuming that the probability of life forming would be effectively zero. 
+        However, given that a world is habitable, there is some non-zero probability that life could form on said world. 
+        This probability is different from the probability of life forming on any world, which would include both habitable and non-habitable worlds. 
+        By using conditional probability we are essentially saying "what is the probability that life forms on a world, given that the world is habitable?" 
+        If it helps, you can think of the formation of life as event A and a habitable world as event B. 
+        Knowing whether a world is habitable or not will change our estimate of the probability of life forming on that world. 
+        In the Pfeifer Equation, the <span class="orange">orange</span> factors combine to represent the probability of event B, which is the probability that a world is habitable. 
+        If the world is indeed habitable, the red factor (the probability that life forms on a habitable world), represents P(A|B) where event A is the formation of life. 
+        The estimate for the red factor is P(A|B). 
+        Now if we want P(Life Forms and World is Habitable), we can use P(A and B) = P(A|B) x P(B). 
+        At this point in the equation, we have found the probability that a world is habitable and life forms.</p>
+
+
+    <h3 class="green">Expected Value of a Binomial Random Variable</h3>
+    <h4 class="green">What is a binomial random variable?</h4>
+    <p class="green">A binomial random variable is made up of a fixed finite number of independent trials where each trial can be clearly classified as a success or failure, with the understanding that the probability of success on each trial is constant.</p>
+    <p class="green">For example: The number of heads after flipping a fair coin 100 times is a binomial random variable. 
+        No matter the result of any of the trials, the coin will be flipped 100 times. 
+        Landing on heads is considered a success and landing on tails is considered a failure. 
+        Since the coin is fair, the probability of landing on heads is 50%, and this does not change from flip to flip. 
+        Our random variable can take on any value from 0 to 100, but we are more likely to get a value around 50.</p>
+
+    <h4 class="green">How does this relate to planets?</h4>
+    <p class="green">The number of life-inhabiting planets in the Milky Way (not including Earth) is also a binomial random variable. 
+        The number of planets in the galaxy is a finite number. 
+        Each individual planet represents an independent trial, since we are assuming that the outcome of one planet having or not having life does not affect the probability of another planet having life. 
+        If we were able to check every individual planet and verify if it had life or not, we would classify planets with life as a success and planets without as a failure.</p>
+    <p class="green">Now that we have established a binomial random variable, we can model the value of our variable using the binomial distribution.</p>
+
+    <h4 class="green">The Binomial Distribution</h4>
+    <p class="green">The binomial distribution takes two parameters, n and p. 
+        n represents the number of trials, and p represents the probability of success for each trial. 
+        Using these parameters, the binomial distribution can help us find useful information regarding our random variable.</p>
+    <p class="green">For now, we are only interested in the <strong>Expected Value</strong>, also referred to as the <strong>mean</strong>. For binomial distributed variables, the mean is equal to</p>
+    <p class="formula"><span class="purple">n</span> &#x2022 <span class="orange">p</span></p>
+    <p class="green">Conveniently, n and p are embedded in the Pfeifer Equation. 
+        n is equal to the number of planets, which is the product of the <strong class="purple">purple</strong> factors. 
+        p is equal to the probability of life on an individual planet, which is the product of the <strong class="orange">orange</strong> and <strong class="red">red</strong> factors. 
+        Multiplying these parameters together will give us the expected number of planets with life in the Milky Way.</p>
+    <p class="green">Since we know that Earth has life, it does not share the same probability of success as the other planets in the galaxy. 
+        Therefore, it does not count as a trial and it was excluded from our random variable. 
+        Nevertheless, Earth is in the scope of the number of life-inhabiting planets currently in the Milky Way galaxy, so we can safely add k = 1 to our expectation from earlier.</p>
+    <p class=" formula">(<span class="purple">n</span> &#x2022 <span class="orange">p</span>) + <span class="green">k</span></p>
+
+    <div class="buttons">
+        <a href="./Drake Equation.html" class="button"><div id = "TDE">The Drake Equation</div></a>
+        <a href="./The Math.html" class="button">The Math</a>
+        <a href="./Factors.html" class="button">Factors</a>
+        <a href="./Estimates.html" class="button">Estimates</a>
+        <a href="./Find Aliens.html" class="button" id="HL">How Long Until We Find Aliens</a>
+        <a href="./What About Moons.html" class="button" id="WAM">What About Moons</a>
+        <a href="./Make Your Own.html" class="button" id="MYO">Make Your Own</a>
+        <br>
+        <a href="../../index.html" class="button">Home</a>
+    </div>
+
+    <p class="foot">Made by Nicholas Pfeifer</p>
+</body>
+</html>

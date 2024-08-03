@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pfeifer Equation | How Long Until We Find Aliens</title>
+    <link rel="icon" type="image/x-icon" href="../images/Fav Sc.png">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <a href="../../index.html" class="b-link"><div id = "bar">
+        <h1 id="Main">The Pfeifer Equation</h1>
+        <div id = "logo">
+            <div class="circle outer" id="or-s"><div class="circle inner"></div></div>
+            <div class="circle outer red" id="re-s"><div class="circle inner red"></div></div>
+            <div class="circle outer purple" id="pu-s"><div class="circle inner purple"></div></div>
+        </div>
+        </div></a>
+    <h2 class="supp-head">How Long Until We Find Aliens</h2>
+
+    <h3 class="white">The Geometric Distribution</h3>
+    <p>Using the geometric distribution, we can determine how likely it is that we find at least 1 life-inhabiting planet within a certain number of trials. 
+        For those who may be familiar with the <strong>exponential distribution</strong> (for continuous random variables), the geometric distribution is the version for <strong>discrete</strong> random variables.
+    </p>
+    <p>To avoid potential confusion, the geometric distribution that will be used here is sometimes referred to as the <strong>shifted geometric distribution</strong>. 
+        It is defined as the probability distribution of the number of Bernoulli trials needed to get one success. 
+        A Bernoulli trial is one that can only result in a success or a failure. 
+        It takes on a single parameter, p, the probability of success (constant for each trial).</p>
+    <ol>Two questions we are able to answer using the geometric distribution are:
+        <li>What is the probability that at least 1 success occurs within a pre-selected number of trials?</li>
+        <li>Within how many trials is there a pre-selected probability of having at least 1 success?</li>
+    </ol>
+    <p>In essence, once we have a value for p (the probability of success on each trial) we can either fix the number of trials and solve for the probability that at least 1 success occurs, or we can fix the probability that at least 1 success occurs and solve for the number of trials required to achieve said probability.</p>
+
+    <p>The probability of success on the n-th trial is:</p>
+    <p class="formula">(1 - p)<sup>n-1</sup> &#x2022 p </p>
+    <p class="caption">This is equal to the <strong>Probability Mass Function</strong> (PMF) of the geometric distribution</p>
+    <p>The result yields the probability of failing on the first n-1 trials and observing the first success on the n-th trial.</p>
+    <p>This, however, does not quite answer our question. 
+        This formula only finds the probability of the first success occurring on exactly the n-th trial. 
+        We want the probability of the first success occurring on or before the n-th trial. 
+        We can achieve this by taking the sum of the PMF probabilities from 1 to n.</p>
+    <p>Probability of first success by (on or before) the n-th trial is:</p>
+    <p class="formula">1 - (1 - p)<sup>n</sup></p>
+    <p class="caption">This is equal to the <strong>Cumulative Distribution Function</strong> (CDF) of the geometric distribution</p>
+    <p>Now we can plug in values for p and n and get the probability of the first success on or before the n-th trial.</p>
+    <p>To answer our second question, we can rearrange the CDF function to solve for n.</p>
+    <p class="formula">n = log(1 - x) / log(1 - p)</p>
+    <p class="caption">x = a pre-selected probability of first success on or before the n-th trial</p>
+    <p>Note: n will often end up as a decimal, so we <strong>always round up</strong> since we cannot have a partial trial.</p>
+    <p>After plugging in values for x and p, we obtain a value for n. This is the number of trials needed in order to have a certain chance (x) of getting at least 1 success within n trials.</p>
+
+    <p>For example: Let's say your favorite sports team has a 30% chance of winning any individual game. 
+        This is p, the probability of success. 
+        We want to know how many games your favorite team would have to play in order to have a 90% chance of winning at least 1 game within that span. 
+        This 90% represents x, our pre-selected probability. 
+        We want to know n, which is how many games they have to play in order to have a 90% chance of winning at least once. 
+        When we plug in 0.9 for x and 0.3 for p in our equation for n, we end up with n = 6.46. 
+        Since your team cannot win a game that is not completed, n is rounded up to 7. 
+        Thus, 7 is the number of games your favorite team would have to play so that the chance of winning at least 1 game is 90%.</p>
+
+    <h4>Memorylessness Property</h4>
+    <p>The geometric distribution has a memorylessness property. 
+        This property essentially states that previous failed trials do not affect the probability of success on future trials. 
+        You may have heard the terms "due" or "overdue" used in such a context. 
+        After many failed trials, a success is not more likely or "due to happen" because of "unluckiness" that has already occurred. 
+        For instance, if there is a 50% chance of getting at least 1 success over the next 10 trials and a success does not occur, the next 10 trials after that still have a 50% chance of getting at least 1 success. 
+        The memorylessness property is saying that being "due" for a success is not how probability works.</p>
+
+    <p>For example: Going back to your favorite sports team from earlier, if they end up losing the first 6 games that they play, they are not more likely to win the seventh game. 
+        The probability of success, p, remains constant at 30% for the next game. 
+        However, (after losing the first 6 games) over the next 7 games there is still a 90% chance of winning at least 1 of those games, with p equal to 0.3.</p>
+    
+    <h4>Application to Planets</h4>
+    <p>For our purposes, we can treat p as the product of the <span class="orange">orange</span> and <span class="red">red</span> factors, which represents the probability of life on an individual planet. 
+        One trial involves checking a planet and verifying if it has life or not. 
+        Assuming that we have the capabilities to do so, a planet with life is classified as a success and a planet without life is classified as a failure.</p>
+    <p>Pfeifer's estimate for the <span class="red">red</span> factor does not have a <strong>finite</strong> value. 
+        In order to carry out these calculations, p must be finite, so we will have to substitute finite values for this factor. 
+        If you are using your own estimates, you do not have to worry about this as long as all of your estimates are finite.</p>
+    <p>For now, let's say <span class="red">P(Life Forms) = 0.1</span></p>
+    <p>The product of this and the <span class="orange">orange</span> factors results in a probability of life on an individual planet equal to 0.00000035, which is roughly 1 in every 2.857 million planets. 
+        This is p, the probability of success for each planet.</p>
+    <p>If we were to check all 5678 exoplanets (as of July 2024) for life with p = 0.00000035, we get (using the CDF function):</p>
+    <p class="formula">1 - (1 - 0.00000035)<sup>5678</sup> = 0.001985327</p>
+    <p class="caption">This means that the probability of at least 1 planet of the 5678 having life is equal to roughly 0.2%</p>
+    <p>Now let's find how many planets we would need to check (n) if we choose a probability of finding at least 1 planet (out of n) with life (x). 
+        p is still equal to 0.00000035. 
+        If we choose a value for x of 50%, solving for n we get:</p>
+    <p class="formula">n = log(1 - 0.5) / log(1 - 0.00000035) = 1,980,421</p>
+    <p class="caption">*remember to round up</p>
+    <p class="caption">Using these parameters, there is a 50% probability of finding at least 1 planet with life over the next 1,980,421 that we check</p>
+    <p>A table has been provided below showing how many planets we would have to check to have certain probabilities of finding at least 1 planet with life for various values of P(Life Forms) using Pfeifer's factor estimates.</p>
+    <table class="c-table">
+        <caption>Values of x</caption>
+        <tr>
+            <th class="red">P(Life Forms)</th>
+            <th>10%</th>
+            <th>50%</th>
+            <th>90%</th>
+            <th>99%</th>
+        </tr>
+        <tr>
+            <th class="red">1.00</th>
+            <td>30,103</td>
+            <td>198,042</td>
+            <td>657,881</td>
+            <td>1,315,761</td>
+        </tr>
+        <tr>
+            <th class="red">0.75</th>
+            <td>40,138</td>
+            <td>264,056</td>
+            <td>877,175</td>
+            <td>1,754,349</td>
+        </tr>
+        <tr>
+            <th class="red">0.50</th>
+            <td>60,206</td>
+            <td>396,084</td>
+            <td>1,315,762</td>
+            <td>2,631,524</td>
+        </tr>
+        <tr>
+            <th class="red">0.25</th>
+            <td>120,412</td>
+            <td>792,168</td>
+            <td>2,631,525</td>
+            <td>5,263,050</td>
+        </tr>
+        <tr>
+            <th class="red">0.10</th>
+            <td>301,030</td>
+            <td>1,980,421</td>
+            <td>6,578,814</td>
+            <td>13,157,627</td>
+        </tr>
+        <tr>
+            <th class="red">0.05</th>
+            <td>602,061</td>
+            <td>3,960,841</td>
+            <td>13,157,628</td>
+            <td>26,315,256</td>
+        </tr>
+        <tr>
+            <th class="red">0.01</th>
+            <td>3,010,301</td>
+            <td>19,804,205</td>
+            <td>65,788,145</td>
+            <td>131,576,289</td>
+        </tr>
+        <tr>
+            <th class="red">0.001</th>
+            <td>30,103,005</td>
+            <td>198,042,052</td>
+            <td>657,881,454</td>
+            <td>1,315,762,908</td>
+        </tr>
+    </table>
+    <p>That is a lot of planets. 
+        Keep in mind that Pfeifer's estimate for the <span class="red">red</span> factor <span class="red">P(Life Forms)</span> is many <strong>orders of magnitude</strong> smaller than the examples shown above. 
+        In turn, that would cause the results in the table above to be many magnitudes greater.</p>
+    
+    <p>In real life we are not able to instantly check whether a planet has life or not. 
+        If we were to start sending probes to exoplanets to scan for life, it would take years. 
+        This is because of the great distances between us and other stars, which are many light years away. 
+        We can calculate how long in years it would take to check a certain number of planets, if we define a rate at which they are checked. 
+        There is no way to estimate this rate, since we have not done it at any rate. 
+        It is just guesswork.</p>
+    <ul>Let's say
+        <li>r = planets checked per year</li>
+        <li>n = number of planets to be checked</li>
+        <li>y = number of years to check n planets</li>
+    </ul>
+    <p class="formula">y = n / r</p>
+    <p>The top left number in the table above, - 30,103 - represents the number of planets to check in order to have a 10% chance of finding at least 1 with life, given that <span class="red">P(Life Forms)</span> = 100%. 
+        This value for the life forms factor is the most <strong>optimistic</strong>. 
+        If we checked 10 planets per year, it would take 3010.3 years to check 30,103 planets. 
+        If no life-inhabiting planets are found, there would still be a 10% chance of finding at least 1 over the next 30,103 planets that are checked.</p>
+
+    <div class="buttons">
+        <a href="./Drake Equation.html" class="button"><div id = "TDE">The Drake Equation</div></a>
+        <a href="./The Math.html" class="button">The Math</a>
+        <a href="./Factors.html" class="button">Factors</a>
+        <a href="./Estimates.html" class="button">Estimates</a>
+        <a href="./Find Aliens.html" class="button" id="HL">How Long Until We Find Aliens</a>
+        <a href="./What About Moons.html" class="button" id="WAM">What About Moons</a>
+        <a href="./Make Your Own.html" class="button" id="MYO">Make Your Own</a>
+        <br>
+        <a href="../../index.html" class="button">Home</a>
+    </div>
+    
+    <p class="foot">Made by Nicholas Pfeifer</p>
+</body>
+</html>

@@ -1,0 +1,392 @@
+/* {
+    border-color: red;
+    border-style: solid;
+    color: white;
+}*/
+
+body {
+    background-color: #041A40;
+    margin: 0.9756vw;
+}
+
+.b-link {
+    text-decoration: none;
+}
+
+#bar {
+    margin-bottom: 10%;
+}
+
+#Main {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 10vw;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+#logo {
+    display: inline;
+}
+
+#or-s, #re-s, #pu-s {
+    width: 5%;
+}
+
+#s-1 {
+    font-size: 7vw;
+}
+
+#sub-main {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+.polka {
+    background-image: 
+      radial-gradient(rgb(255, 255, 255) 5%, transparent 5%),
+      radial-gradient(rgb(255, 255, 255) 5%, transparent 5%);
+    background-position: 1.11vw 1.11vw, 11.11vw 11.11vw;
+    background-size: 20vw 20vw;
+    background-color: #041A40;
+    
+  }
+
+.circle {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-color: #f57e23;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.outer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%; /* Maybe on this one */
+    box-shadow: .5vw .5vw 1vw #041A40
+}
+
+.inner {
+    width: 90%;
+    background-color: #f7c59d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.operator {
+    width: 8%;
+    text-align: center;
+    font-size: 10vw;
+    color: #f57e23;
+    font-family: sans-serif;
+    display: inline;
+    vertical-align: middle;
+}
+
+.result {
+    display: inline;
+    font-size: 15vw;
+    vertical-align: middle;
+    color: #f57e23;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outer.purple{
+    background-color: #A454B1;
+}
+
+.inner.purple {
+    background-color: #D2B1D8;
+}
+
+.operator.purple, .result.purple, h2.purple, span.purple, li.purple, strong.purple, h3.purple, p.purple {
+    color: #A454B1;
+}
+
+.outer.red {
+    background-color: #E3473B;
+}
+
+.inner.red {
+    background-color: #EAA09B;
+}
+
+h2.red, .operator.red, .result.red, h3.red, h4.red, p.red, li.red, span.red, strong.red, th.red {
+    color:#E3473B
+}
+
+.or-re {
+    background-image: linear-gradient(to left, #E3473B , #f57e23);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.re-pr {
+    background-image: linear-gradient(to left, #A454B1, #E3473B);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.pr-gr {
+    background-image: linear-gradient(to left, #5DA560, #A454B1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.result.green, h2.green, h3.green, span.green, .green {
+    color: #5DA560;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.outer.green {
+    background-color: #5DA560;
+}
+
+.inner.green {
+    color: #000000;
+    background-color: #C1D4C1;
+}
+
+@font-face {
+    font-family: "Poor Story";
+    src: url(./fonts/PoorStory-Regular.ttf) format("truetype");
+}
+
+h2 {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #f57e23;
+    font-size: 8vw;
+    /*text-align: center;*/
+    /*backdrop-filter: blur(2px);this looks decent*/
+    border-bottom: solid 1vw;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 6.9%;
+}
+
+h2.red {
+    border-top: solid #f57e23 1vw;
+}
+
+h2.purple {
+    border-top: solid #E3473B 1vw;
+}
+
+h2.green {
+    border-top: solid #A454B1 1vw;
+}
+
+h2, .result {
+    text-shadow: .5vw .5vw 1vw #041A40;
+}
+
+#tstb {
+    font-size: 14vw;
+}
+
+#About {
+    color: #FFFFFF;
+}
+
+p {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+#Alone {
+    border-top: solid #5DA560 1vw;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 2vw;
+    margin-top: 0%;
+}
+
+strong {
+    color: #00DAFF;
+}
+
+.i-link {
+    text-decoration-color: #00DAFF;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 15%;
+}
+
+.button {
+    border: solid .1vw white;
+    width: 20%;
+    color: black;
+    background-color: lightblue;
+    text-align: center;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    display: inline-block;
+    margin-bottom:5%;
+    aspect-ratio: 3.829/1;
+    vertical-align: middle;
+    line-height: 5vw;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #f7c59d;
+}
+
+#TDE {
+    font-size: 2.5vw;
+}
+
+#HL {
+    font-size: 2.5vw;
+}
+
+.foot {
+    text-align: center;
+}
+
+.supp-head {
+    border: 0;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-shadow: none;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #f57e23;
+    font-size: 7vw;
+}
+
+.formula {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.caption {
+    text-align: center;
+    margin-bottom: 4.16%;
+}
+
+ul, ol {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+span.orange, li.orange, p.orange, h4.orange, strong.orange{
+    color: #f57e23;
+}
+
+h4 {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+table {
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 2vw;
+    border-collapse: collapse;
+    width: 60%;
+    text-align: center;
+    background: linear-gradient(to bottom right, #041A40, #E3473B);
+}
+
+.c-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: .1vw solid white;
+}
+
+th {
+    background-color: #041A40;
+}
+
+caption {
+    text-indent: 10vw;
+}
+
+#moons-now {
+    border-top: none;
+    padding-top: 0%;
+}
+
+.small {
+    font-size: 12vw;
+}
+
+.pb {
+    border-top: solid #A454B1 1vw;
+    margin-top: 0%;
+    padding-top: 6.9%;
+}
+
+.moons {
+    width: 19%;
+}
+
+.moons-b {
+    width: 12%;
+}
+
+.s-b {
+    font-size: 2vw;
+}
+
+.m-small {
+    font-size: 4vw;
+}
