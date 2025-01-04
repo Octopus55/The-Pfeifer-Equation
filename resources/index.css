@@ -390,3 +390,117 @@ caption {
 .m-small {
     font-size: 4vw;
 }
+
+input {
+    width: 15vw;
+    height: 3vw;
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Poor Story", system-ui;
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: black;
+}
+
+.with-input {
+    display: block;
+    align-content: center;
+}
+
+#submit-button {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    width: 40%;
+    height: 10vw;
+    background-color:#C1D4C1 ;
+    border-radius: 50%;
+    border-color: #5DA560;
+    border-width: 0.9vw;
+    border-style: solid;
+    cursor: pointer;
+    color: black;
+}
+
+#result {
+    color: #5DA560;
+}
+
+#result, #result2, #result3, #result4, #result5, #result6 {
+    text-align: center;
+}
+
+#result4 {
+    color: #A454B1;
+}
+
+#result6 {
+    color: #E3473B;
+}
+
+#add-orange, #add-red, #add-purple, #add-green {
+    display: inline-block;
+    border-radius: 10%;
+    border-width: 0.9vw;
+    border-style: solid;
+    width: 20%;
+    color: black;
+    text-align: center;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-left: 1%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#add-orange {
+    background-color: #f7c59d;
+    border-color: #f57e23;
+}
+
+#add-red {
+    background-color: #EAA09B;
+    border-color: #E3473B;    
+}
+
+#add-purple {
+    background-color: #D2B1D8;
+    border-color: #A454B1;
+}
+
+#add-green {
+    background-color: #C1D4C1;
+    border-color: #5DA560;
+}
+
+#add-factors {
+    text-align: center;
+}
+
+#remove-factor {
+    display: flex;
+    background-color: white;
+    width: 20%;
+    border-radius: 10%;
+    border-width: 0.9vw;
+    border-style: solid;
+    border-color: darkgrey;
+    text-align: center;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 5vw;
+    margin: 4% auto;
+    align-items: center;
+    cursor: pointer;
+}
+
+#remove-icon {
+    font-size: 8vw;
+    margin-right: 12%;
+    margin-bottom: 8%;
+}

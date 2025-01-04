@@ -30,43 +30,92 @@
         Just be careful to pay close attention to how adding or removing a factor could affect the units in your end result. 
         How many life-inhabiting worlds do you estimate are lurking in the Milky Way galaxy?</p>
 
-        <div class="circle outer"><div class="circle inner">
+    <h4>How to use:</h4>
+    <p>Below you will find a calculator where you have the ability to implement your own factors and estimates. Buttons have been provided to add new factors to the equation. As a reminder, here is what each color is meant to represent:</p>
+    <ul>
+        <li class="orange">The orange factors represent indepedent probabilities relating to the habitability of a world</li>
+        <li class="red">The red factor(s) represent dependent probabilities given that the world is habitable</li>
+        <li class="purple">The purple factors combine to represent the number of worlds (ex. in the galaxy)</li>
+        <li class="green">The green factor(s) represent constants to be added at the end of the calculation</li>
+    </ul>
+    <p>There is also a button for removing factors. When clicked, delete icons will appear at the bottom of each factor.
+        Once you have finished removing factors, make sure to click "cancel."
+        Please note that if you remove all factors of one color, you will not be able to add factors of that color until refreshinging the page.
+        To stay on the safe side, it is recommened to add new factors first prior to removing others.
+        Alternatively, giving an input of 1 to <span class="orange">orange</span> and <span class="red">red</span> factors and and input of 0 to <span class="green">green</span> factors will render the same result as if they were not included.
+        In any case, you can always <a href="./Make Your Own.html" class="i-link"><strong>refresh</strong></a> the page.</p>
+    <p>Lastly, all inputs should be entered as decimals (ex. 0.5), integers (ex. 1), or scientific notation (ex. 1e-7 which equates to 0.0000001 or 1e+7 which equates to 10,000,000).
+        When entering large numbers, do not include commas.
+        Leaving an input blank has the same effect as entering 0.</p>
+    <p>Once you are satisfied with your equation, hit the submit button to see the results!</p>
+
+        <div id="add-factors">
+        <div id="add-orange">Add Orange Factor</div>
+        <div id="add-red">Add Red Factor</div>
+        <div id="add-purple">Add Purple Factor</div>
+        <div id="add-green">Add Green Factor</div>
+        </div>
+        <div id="remove-factor">Remove Factor
+            <span class="red" id="remove-icon">x</span>
+        </div>
+
+        <div class="circle outer"><div class="circle inner with-input">
             P(Terrestrial or Super Earth)
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x">x</div>
-        <div class="circle outer"><div class="circle inner">
+        <div class="circle outer"><div class="circle inner with-input">
             P(In Habitable Zone)
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x">x</div>
-        <div class="circle outer"><div class="circle inner">
+        <div class="circle outer"><div class="circle inner with-input">
             P(Magnetic Field)
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x">x</div>
-        <div class="circle outer"><div class="circle inner">
+        <div class="circle outer"><div class="circle inner with-input">
             P(Life Supporting Atmosphere)
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x">x</div>
-        <div class="circle outer"><div class="circle inner">
+        <div class="circle outer"><div class="circle inner with-input">
             P(Contains Essential Chemicals)
+            <input type="text" name="factor-value">
         </div></div>
+
+
         <div class="operator x or-re">x</div>
-        <div class="circle outer red"><div class="circle inner red">
+        <div class="circle outer red"><div class="circle inner red with-input">
             P(Life Forms)
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x re-pr">x</div>
-        <div class="circle outer purple"><div class="circle inner purple">
+        <div class="circle outer purple"><div class="circle inner purple with-input">
             Number of Stars in the Galaxy
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator x purple">x</div>
-        <div class="circle outer purple"><div class="circle inner purple">
+        <div class="circle outer purple"><div class="circle inner purple with-input">
             Planets Per Star
+            <input type="text" name="factor-value">
         </div></div>
-        <div class="operator = pr-gr">+</div>
-        <div class="circle outer green"><div class="circle inner green">
+        <div class="operator + pr-gr">+</div>
+        <div class="circle outer green"><div class="circle inner green with-input">
             Number of Planets known to have Life
+            <input type="text" name="factor-value">
         </div></div>
         <div class="operator = green">=</div>
-        <div class="operator = green">n</div>
+        <div class="operator n green">n</div>
+
+        <h3 id="result">Result</h3>
+        <h3 id="result4">Result4</h3>
+        <h3 id="result5">Result5</h3>
+        <h3 id="result6">Result6</h3>
+        <h3 id="result2">Result2</h3>
+        <h3 id="result3">Result3</h3>
+        
+        <input type="submit" id="submit-button">
 
         <div class="buttons">
             <a href="./Drake Equation.html" class="button"><div id = "TDE">The Drake Equation</div></a>
@@ -82,5 +131,6 @@
         
         <p class="foot">Made by Nicholas Pfeifer</p>
 
+        <script src="../myo.js"></script>
 </body>
 </html>
